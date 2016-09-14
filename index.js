@@ -16,7 +16,7 @@ app.get('/', function(req, res) {
 
 //fb verification
 app.get('/webhook/', function(req, res) {
-  if (req.query['hub.verify_token'] === 'EAAHe6U1pTJUBAM9D50ZA1HMZCcAj9Mf7xr8oiM99Gag3vdZBnEFZB2rPbX0mjjjaDY2ZCjuSaqZCIXbenbZAhF8L4HEif3ZAinYCXCBZCCWwQD3ZAJM52i5IFxNQk04qZCM44udoV0FZC8x1P5NqZAR5v0HYeZAOZANYqOV2swYVrrr6JdujAZDZD') {
+  if (req.query['hub.verify_token'] === 'hope_this_thing_works') {
     res.send(req.query['hub.challenge']);
   }
   res.send('Error, wrong token');
